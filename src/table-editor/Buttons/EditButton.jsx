@@ -1,16 +1,28 @@
-{/* import React, {useState} from 'react'; */}
- import {useEditing} from './Context/Editing'; 
+import {useEditing} from '../Context/Editing'; 
+import {useEntries} from '../Context/EntryContextTableDataExample';
 
 
 const EditButton = () => {
 
+    
     const {isEditing, setIsEditing}  = useEditing(); 
+    const {saveChanges} = useEntries();
+    
+    const handleEditClick = () => {
+        if (isEditing){
+            saveChanges();
+            setIsEditing(false);
+        }
+        else{setIsEditing(true);}
+    };
     
 
     return (
         <div className="ml-450">
             <button 
-            onClick = {()=> setIsEditing(prevState => !prevState)}
+            onClick={handleEditClick}
+            
+            //onClick = {()=> setIsEditing(prevState => !prevState)}
             className={`  text-indigo-50 font-bold p-3 w-28 rounded rounded-l-lg inline-flex items-center mb-4 cursor-pointer 
              ${isEditing ? 'bg-green-500 hover:bg-green-600' : 'bg-indigo-300 hover:bg-indigo-400'}`}>
                 <EditIcon/>
