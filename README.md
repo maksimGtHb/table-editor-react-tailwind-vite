@@ -37,7 +37,7 @@ npm (comes with Node.js)
 Run the App Locally 🖥️
 
 1️⃣ Clone the Repository
-git clone https://gitlab.com/your-username/your-repo.git
+git clone {link to project} 
 
 2️⃣ Go to the Project Folder
 cd your-repo
