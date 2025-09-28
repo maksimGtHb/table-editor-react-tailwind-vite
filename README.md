@@ -36,14 +36,18 @@ npm (comes with Node.js)
 
 Run the App Locally 🖥️
 
-1️⃣ Clone the Repository
+1️⃣ Clone the Repository:
+
 git clone {link to project} 
 
-2️⃣ Go to the Project Folder
+2️⃣ Go to the Project Folder:
+
 cd your-repo
 
-3️⃣ Install Dependencies
+3️⃣ Install Dependencies:
+
 npm install
 
-4️⃣ Run the App
+4️⃣ Run the App:
+
 npm start
